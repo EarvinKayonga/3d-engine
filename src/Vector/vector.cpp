@@ -7,5 +7,44 @@ void Vector::printf(){
 };
 
 string Vector::toString(){
-  return "sz";
+  return ("class Vector { \n   x: " + to_string(coords[0]) + " y: " + to_string(coords[1]) + " z: " + to_string(coords[2]) + " d: " + to_string(coords[3]) + " \n }");
+}
+
+double Vector::x(){
+  return (coords[0]);
+}
+
+double Vector::y(){
+  return (coords[1]);
+}
+
+double Vector::z(){
+  return (coords[2]);
+}
+
+double Vector::d(){
+  return (coords[3]);
+}
+
+void Vector::set_x(double x){
+  coords[0] = x;
+}
+
+void Vector::set_y(double y){
+  coords[1] = y;
+}
+
+void Vector::set_z(double z){
+  coords[2] = z;
+}
+
+void Vector::set_d(double d){
+  coords[3] = d;
+}
+
+Vector Vector::operator+(const Vector& right){
+  Vector res;
+  
+  
+  return (res);
 }
