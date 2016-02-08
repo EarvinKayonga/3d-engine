@@ -1,11 +1,12 @@
-# Small Agenda
+# 3d-Engine
 
-A little experimentation with C++
+A little experimentation with C++,
+A small c++ module to do 3D
 
 
 ### Usage
  ```
 git clone this repo
-cd small-agenda
+cd 3d-engine
 make
 ```
