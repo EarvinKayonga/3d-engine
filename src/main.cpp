@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include "Person/person.h"
+#include "Vector/vector.h"
+
 
 using namespace std;
 
