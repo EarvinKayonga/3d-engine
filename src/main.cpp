@@ -12,6 +12,9 @@ int     main()
 {
   Person Earvin("Earvin", "Kayonga", 23);
   Person Chris("Christelle", "Fremy", 22);
+  Vector zero(0, 0, 0, 0);
+
+  zero.printf();
   Earvin.say("hi");
   Earvin.hasFriends(Chris);
   Earvin.showFriends();
