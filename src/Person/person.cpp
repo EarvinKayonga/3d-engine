@@ -7,7 +7,7 @@ void Person::hasFriends(Person mfriend){
   friends.push_back(mfriend);
 };
 
-std::vector<Person> Person::Friends(){
+vector<Person> Person::Friends(){
   return friends;
 };
 
