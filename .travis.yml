@@ -1,0 +1,15 @@
+language: cpp
+
+compiler:
+  - clang
+  - gcc
+
+before_install:
+  - chmod 777 configure
+
+# whitelist
+branches:
+  only:
+    - master
+    
+script: make
