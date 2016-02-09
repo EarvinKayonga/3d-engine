@@ -7,7 +7,7 @@ void Vector::printf(){
 };
 
 string Vector::toString(){
-  return ("class Vector { \n   x: " + to_string(coords[0]) + " y: " + to_string(coords[1]) + " z: " + to_string(coords[2]) + " d: " + to_string(coords[3]) + " \n }");
+  return ("class Vector { \n   x: " + to_string(coords[0]) + " y: " + to_string(coords[1]) + " z: " + to_string(coords[2]) + " d: " + std::to_string(coords[3]) + " \n }");
 }
 
 double Vector::x(){
