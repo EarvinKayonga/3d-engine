@@ -1,6 +1,0 @@
-Usage:
-  - make:       //build
-          fclean
-          clean
-          re
-  - ./Bin       //launch
