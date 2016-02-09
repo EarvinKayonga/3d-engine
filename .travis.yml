@@ -7,9 +7,20 @@ compiler:
 before_install:
   - chmod 777 configure
 
+install:
+- if [ "$CC" = "g++" ]; then export CC="g++-4.8" CC="gcc-4.8"; fi
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-4.8
+    - g++-4.8
+    - clang
+
 # whitelist
 branches:
   only:
     - master
-    
+
 script: make
