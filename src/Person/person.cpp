@@ -1,3 +1,4 @@
+#include <string.h>
 #include "person.h"
 
 using namespace std;
