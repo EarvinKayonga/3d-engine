@@ -1,7 +1,5 @@
-#include <string.h>
+#include <string>
 #include "person.h"
-
-using namespace std;
 
 void Person::hasFriends(Person mfriend){
   friends.push_back(mfriend);
@@ -15,14 +13,14 @@ void Person::showFriends(){
   cout << endl;
 };
 
-vector<Person> Person::Friends(){
+std::vector<Person> Person::Friends(){
   return friends;
 };
 
 void Person::say(string say){
-  cout << "Person " << prenom << " is saying " << say << endl;
+  std::cout << "Person " << prenom << " is saying " << say << std::endl;
 };
 
 string Person::toString(){
-  return "Prénom: " + prenom + " Nom: " + nom + " Age: " + to_string(age);
+  return "Prénom: " + prenom + " Nom: " + nom + " Age: " + std::to_string(age);
 }
