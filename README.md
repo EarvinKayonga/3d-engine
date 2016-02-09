@@ -1,8 +1,8 @@
 # 3d-Engine
 
-A little experimentation with C++
+A little experimentation with C++,
 
-A small c++ module to do 3D
+a small c++ module to do 3D
 
 
 ### Setup
