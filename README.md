@@ -1,13 +1,14 @@
-# 3d-Engine
+ls# 3d-Engine
 
 A little experimentation with C++,
 
 a small c++ module to do 3D
 
-### TodoList
-
+TodoList
+ 
 ![ready](https://badge.waffle.io/EarvinKayonga/3d-engine.svg?label=ready&title=Ready)](http://waffle.io/EarvinKayonga/3d-engine)
 
+Build status
 [![Build Status](https://travis-ci.org/EarvinKayonga/3d-engine.svg?branch=master)](https://travis-ci.org/EarvinKayonga/3d-engine)
 
 ### Setup
