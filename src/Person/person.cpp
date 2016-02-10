@@ -31,7 +31,7 @@ void Person::say(string say){
 };
 
 string Person::toString(){
-  return "Prénom: " + prenom + " Nom: " + nom + " Age: " + std::to_string(age);
+  return "Prénom: " + prenom + " Nom: " + nom + " Age: " + patch::to_string(age);
 }
 
 void Person::showFriends(){
