@@ -1,12 +1,16 @@
 #include "vector.h"
 
 void Vector::printf(){
+  using namespace std;
+  
   std::printf("%s\n", "class Vector {");
   std::printf("    x: %f  y: %f z: %f d: %f \n", coords[0], coords[1], coords[2], coords[3]);
   std::printf("%s\n", "}");
 };
 
 string Vector::toString(){
+  using namespace std;
+  
   return ("class Vector { \n   x: " + std::to_string(coords[0]) + " y: " + std::to_string(coords[1]) + " z: " + std::to_string(coords[2]) + " d: " + std::to_string(coords[3]) + " \n }");
 }
 

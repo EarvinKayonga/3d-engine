@@ -1,8 +1,6 @@
 #include <string>
 #include "person.h"
 
-using namespace std;
-
 void Person::hasFriends(Person mfriend){
   friends.push_back(mfriend);
 };
@@ -20,9 +18,9 @@ string Person::toString(){
 }
 
 void Person::showFriends(){
-  cout << prenom << "'s friends : " << endl;
+  std::cout << prenom << "'s friends : " << std::endl;
   for (unsigned int i = 0; i < friends.size(); i++){
-    cout << friends[i].toString() << endl;
+    std::cout << friends[i].toString() << std::endl;
   }
-  cout << endl;
+  std::cout << std::endl;
 };
