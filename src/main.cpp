@@ -15,8 +15,8 @@ int     main()
   Vector zero(0, 0, 0, 0);
 
   zero.printf();
-  Earvin.say("hi");
-  Earvin.hasFriends(Chris);
-  Earvin.showFriends();
+  //Earvin.say("hi");
+  //Earvin.hasFriends(Chris);
+  //Earvin.showFriends();
   return (0);
 }
