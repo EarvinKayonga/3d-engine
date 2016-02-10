@@ -2,7 +2,9 @@ CC 	=	g++
 NAME	=	Bin
 RM	=	rm -f
 SRC 	=	src/main.cpp		\
-		src/Vector/vector.cpp
+		src/Vector/vector.cpp	\
+		src/Person/person.cpp	\
+		src/Patch/patch.cpp
 
 TESTFLS = 	tests/test.cpp		\
 		tests/Person.cpp	\
