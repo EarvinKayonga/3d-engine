@@ -3,10 +3,8 @@ ls# 3d-Engine
 A little experimentation with C++
 
 
-Backlogs
-![ready](https://badge.waffle.io/EarvinKayonga/3d-engine.svg?label=ready&title=Ready)](http://waffle.io/EarvinKayonga/3d-engine)
+[![ready](https://badge.waffle.io/EarvinKayonga/3d-engine.svg?label=ready&title=Ready)]()
 
-Build status
 [![Build Status](https://travis-ci.org/EarvinKayonga/3d-engine.svg?branch=master)](https://travis-ci.org/EarvinKayonga/3d-engine)
 
 ### Setup
