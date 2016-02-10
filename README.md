@@ -1,11 +1,9 @@
 ls# 3d-Engine
 
-A little experimentation with C++,
+A little experimentation with C++
 
-a small c++ module to do 3D
 
-TodoList
- 
+Backlogs
 ![ready](https://badge.waffle.io/EarvinKayonga/3d-engine.svg?label=ready&title=Ready)](http://waffle.io/EarvinKayonga/3d-engine)
 
 Build status
