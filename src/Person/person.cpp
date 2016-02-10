@@ -1,5 +1,10 @@
-#include <string>
+#include <string.h>
+#include <vector>
+#include <iostream>
+#include <cstdio.h>
 #include "person.h"
+
+using namespace std;
 
 void Person::hasFriends(Person mfriend){
   friends.push_back(mfriend);

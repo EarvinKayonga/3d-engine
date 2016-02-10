@@ -1,7 +1,4 @@
 #include <vector>
-#include <string>
-#include <iostream>
-
 using namespace std;
 
 class Person{
@@ -16,10 +13,12 @@ class Person{
 		      nom = mnom;
 		      age = mage;
 	};
+	
 	void hasFriends(Person mfriend);
-	void say(string);
+	void say(string something);
 	void showFriends();
 	string toString();
+	
 	vector<Person> Friends();
 
 	Person();
