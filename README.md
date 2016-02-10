@@ -8,6 +8,8 @@ a small c++ module to do 3D
 
 ![ready](https://badge.waffle.io/EarvinKayonga/3d-engine.svg?label=ready&title=Ready)](http://waffle.io/EarvinKayonga/3d-engine)
 
+[![Build Status](https://travis-ci.org/EarvinKayonga/3d-engine.svg?branch=master)](https://travis-ci.org/EarvinKayonga/3d-engine)
+
 ### Setup
 
 #### git clone and build
