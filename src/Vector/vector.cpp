@@ -1,6 +1,8 @@
 #include <cstdio>
 #include <iostream>
 #include <string>
+#include <sstream>
+#include <stdexcept>
 #include "vector.h"
 #include "../Patch/patch.h"
 
@@ -14,7 +16,16 @@ void Vector::printf(){
 };
 
 string Vector::toString(){
-  return ("class Vector { \n   x: " + to_string(coords[0]) + " y: " + to_string(coords[1]) + " z: " + to_string(coords[2]) + " d: " + to_string(coords[3]) + " \n }");
+  string Vect = "<Class:Vector ";
+  
+  for (int i = 0; i < 4; i++){
+    std::ostringstream stm ;
+    stm << coords[i] ;
+    Vect += std::to_string(i)  + stm.str() + " ";
+  }
+  
+  Vect += ">";
+  return (Vect);
 }
 
 double Vector::x(){
