@@ -3,7 +3,8 @@
 #include <iostream>
 #include <cstdio>
 #include "person.h"
-
+#include "../Patch/patch.h"
+/*
 #include <sstream>
 
 namespace patch
@@ -15,8 +16,9 @@ namespace patch
     return stm.str() ;
   }
 }
-
+*/
 using namespace std;
+using namespace patch;
 
 void Person::hasFriends(Person mfriend){
   friends.push_back(mfriend);
@@ -31,7 +33,7 @@ void Person::say(string say){
 };
 
 string Person::toString(){
-  return "Prénom: " + prenom + " Nom: " + nom + " Age: " + patch::to_string(age);
+  return "Prénom: " + prenom + " Nom: " + nom + " Age: " + to_string(age);
 }
 
 void Person::showFriends(){
