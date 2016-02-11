@@ -1,4 +1,5 @@
 CC 	=	g++
+CFLAGS 	=	-W -Wall -Werror -Wextra
 NAME	=	Bin
 RM	=	rm -f
 SRC 	=	src/main.cpp		\
@@ -15,7 +16,7 @@ OBJ	=	$(SRC:%.cpp=%.o)
 TESTOBJ = 	$(TESTFLS:%.cpp=%.o)
 
 $(NAME):	$(OBJ)
-		$(CC) $(OBJ) -o $(NAME)
+		$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 $(TNAME):	$(TESTOBJ)
 		$(CC) $(TESTOBJ) -o $(TNAME)
