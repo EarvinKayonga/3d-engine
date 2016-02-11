@@ -1,3 +1,7 @@
+#ifndef VECTOR_H
+#define VECTOR_H
+
+#include <string>
 using namespace std;
 
 class Vector{
@@ -37,3 +41,5 @@ class Vector{
 	  }
 	};
 };
+
+#endif

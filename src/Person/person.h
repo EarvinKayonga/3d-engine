@@ -1,3 +1,6 @@
+#ifndef PERSON_H
+#define PERSON_H
+
 #include <vector>
 using namespace std;
 
@@ -23,3 +26,5 @@ class Person{
 
 	Person();
 };
+
+#endif

@@ -1,21 +1,11 @@
 #include <cstdio>
-#include <vector>
 #include <iostream>
-#include <stdio.h>
 #include <string>
 #include "vector.h"
+#include "../Patch/patch.h"
 
-#include <sstream>
-
-namespace patch
-{
-  template < typename T > std::string to_string( const T& n )
-  {
-    std::ostringstream stm ;
-    stm << n ;
-    return stm.str() ;
-  }
-}
+using namespace std;
+using namespace patch;
 
 void Vector::printf(){
   std::printf("%s\n", "class Vector {");
@@ -24,7 +14,7 @@ void Vector::printf(){
 };
 
 string Vector::toString(){
-  return ("class Vector { \n   x: " + patch::to_string(coords[0]) + " y: " + patch::to_string(coords[1]) + " z: " + patch::to_string(coords[2]) + " d: " + patch::to_string(coords[3]) + " \n }");
+  return ("class Vector { \n   x: " + to_string(coords[0]) + " y: " + to_string(coords[1]) + " z: " + to_string(coords[2]) + " d: " + to_string(coords[3]) + " \n }");
 }
 
 double Vector::x(){
