@@ -21,7 +21,7 @@ string Vector::toString(){
   for (int i = 0; i < 4; i++){
     std::ostringstream stm ;
     stm << coords[i] ;
-    Vect += std::to_string(i)  + stm.str() + " ";
+    Vect += to_string(i)  + stm.str() + " ";
   }
   
   Vect += ">";
