@@ -1,6 +1,9 @@
 #include <string>
 #include <sstream>
+#include <stdexcept>
 #include "patch.h"
+
+using  namespace std;
 
 namespace patch
 {
