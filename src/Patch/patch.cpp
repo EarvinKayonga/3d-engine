@@ -1,5 +1,6 @@
 #include <string>
 #include <sstream>
+#include "patch.h"
 
 namespace patch
 {
