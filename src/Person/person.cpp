@@ -21,7 +21,9 @@ void Person::say(string say){
 };
 
 string Person::toString(){
-  return "Prénom: " + prenom + " Nom: " + nom + " Age: " + to_string(age);
+  std::ostringstream stm;
+  stm << age;
+  return "Prénom: " + prenom + " Nom: " + nom + " Age: " + stm.str();
 }
 
 void Person::showFriends(){

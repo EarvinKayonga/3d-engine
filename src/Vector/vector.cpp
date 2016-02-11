@@ -19,9 +19,10 @@ string Vector::toString(){
   string Vect = "<Class:Vector ";
   
   for (int i = 0; i < 4; i++){
-    std::ostringstream stm ;
+    std::ostringstream stm, si;
     stm << coords[i] ;
-    Vect += to_string(i)  + stm.str() + " ";
+    si << si;
+    Vect += si.str()  + stm.str() + " ";
   }
   
   Vect += ">";
