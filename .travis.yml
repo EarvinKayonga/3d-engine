@@ -14,4 +14,4 @@ branches:
   only:
     - master
 
-script: make && ( cd tests && make && ./TestBin)
+script: make && ( cd tests && make -f MakefileTest && ./TestBin)
