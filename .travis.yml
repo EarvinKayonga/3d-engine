@@ -14,4 +14,4 @@ branches:
   only:
     - master
 
-script: make
+script: make && make tests/Makefile
