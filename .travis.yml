@@ -14,6 +14,6 @@ branches:
   only:
     - master
 
-before_script: cd tests && mv Makefile MakefileTest
-
-script: make && ( cd tests && make -f MakefileTest &&  ./TestBin)
+script:
+  - cd tests && mv Makefile MakefileTest
+  - make && ( cd tests && make -f MakefileTest &&  ./TestBin)
