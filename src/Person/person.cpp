@@ -33,3 +33,13 @@ void Person::showFriends(){
   }
   std::cout << std::endl;
 };
+
+int Person::getAge(){
+  return age;
+}
+string Person::getName(){
+  return nom;
+}
+string Person::getFirstname(){
+  return prenom;
+}

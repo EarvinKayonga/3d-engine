@@ -2,7 +2,9 @@ CC 	=	g++
 CFLAGS 	=	-W -Wall -Werror -Wextra -g
 NAME	=	TestBin
 RM	=	rm -f
-SRC 	=	files/test.cpp
+SRC 	=	files/test.cpp			\
+		../src/Vector/vector.cpp	\
+		../src/Person/person.cpp
 
 OBJ	=	$(SRC:%.cpp=%.o)
 

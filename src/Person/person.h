@@ -21,6 +21,9 @@ class Person{
 	void say(string something);
 	void showFriends();
 	string toString();
+	int getAge();
+	string getName();
+	string getFirstname();
 	
 	vector<Person> Friends();
 
