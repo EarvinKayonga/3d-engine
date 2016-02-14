@@ -14,7 +14,8 @@ branches:
   only:
     - master
 
-script:
+before_script:
   - echo "Dir: " && ls -al
-  - make
-  - cd tests &&  make -f MakefileTest && ./TestBin
+  
+script:
+  - make && cd tests &&  make -f MakefileTest && ./TestBin
