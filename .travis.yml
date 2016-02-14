@@ -15,6 +15,6 @@ branches:
     - master
 
 script:
-  - echo 'Dir: ' && ls -al
+  - echo "Dir: " && ls -al
   - make
   - cd tests &&  make -f MakefileTest && ./TestBin
