@@ -15,5 +15,4 @@ branches:
     - master
 
 script:
-  - cd tests && mv Makefile MakefileTest
-  - make && ( cd tests && make -f MakefileTest &&  ./TestBin)
+  - make && ( cd tests && make -f Makefile &&  ./TestBin)
