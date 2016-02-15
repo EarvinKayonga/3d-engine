@@ -16,7 +16,7 @@ const string	reset("\033[0m");
 int		main(){
   Person Chris("Christelle", "Fremy", 23);
 
-  cout << "Testing Object at initialization";
+  cout << "Testing an Instance of Person at initialization";
   assert (Chris.getFirstname() == "Christelle");
   assert (Chris.getName() == "Fremy");
   assert (Chris.getAge() == 23);
@@ -26,10 +26,13 @@ int		main(){
   Chris.setAge(2);
   Chris.setFirstname("Chris");
   
-  cout << "Testing Object at modification via setters";
+  cout << "Testing an Instance of Person at modification via setters";
   assert (Chris.getFirstname() == "Chris");
   assert (Chris.getName() == "Fre");
   assert (Chris.getAge() == 2);
+  cout << ": " << green << "success" << reset << endl;
+
+  cout << "Testing Class Person";
   cout << ": " << green << "success" << reset << endl;
 
   return (0);
