@@ -18,12 +18,15 @@ class Person{
 	};
 	
 	void hasFriends(Person mfriend);
-	void say(string something);
+	void say(const string something);
 	void showFriends();
 	string toString();
 	int getAge();
 	string getName();
 	string getFirstname();
+	void setAge(const int age);
+	void setName(const string name);
+	void setFirstname(const string name);
 	
 	vector<Person> Friends();
 

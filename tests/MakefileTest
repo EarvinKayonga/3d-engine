@@ -2,7 +2,7 @@ CC 	=	g++
 CFLAGS 	=	-W -Wall -Werror -Wextra -g
 NAME	=	TestBin
 RM	=	rm -f
-SRC 	=	files/test.cpp			\
+SRC 	=	src/test.cpp			\
 		../src/Vector/vector.cpp	\
 		../src/Person/person.cpp
 

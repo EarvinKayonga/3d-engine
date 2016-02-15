@@ -8,7 +8,7 @@
 using namespace std;
 using namespace patch;
 
-void Person::hasFriends(Person mfriend){
+void Person::hasFriends(const Person mfriend){
   friends.push_back(mfriend);
 };
 
@@ -16,7 +16,7 @@ vector<Person> Person::Friends(){
   return friends;
 };
 
-void Person::say(string say){
+void Person::say(const string say){
   std::cout << "Person " << prenom << " is saying " << say << std::endl;
 };
 
@@ -42,4 +42,16 @@ string Person::getName(){
 }
 string Person::getFirstname(){
   return prenom;
+}
+
+void Person::setAge(const int mage){
+  age = mage;
+}
+
+void Person::setName(const string name){
+  nom = name;
+}
+
+void Person::setFirstname(const string firstname){
+  prenom = firstname;
 }
