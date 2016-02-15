@@ -1,5 +1,5 @@
-#ifndef PERSON_H
-#define PERSON_H
+#ifndef		PERSON_H
+#define		PERSON_H
 
 #include <vector>
 using namespace std;
@@ -17,16 +17,16 @@ class Person{
 		      age = mage;
 	};
 	
-	void hasFriends(Person mfriend);
-	void say(const string something);
-	void showFriends();
-	string toString();
-	int getAge();
-	string getName();
-	string getFirstname();
-	void setAge(const int age);
-	void setName(const string name);
-	void setFirstname(const string name);
+	void	hasFriends(Person mfriend);
+	void	say(const string something);
+	void	showFriends();
+	string	toString();
+	int	getAge();
+	string	getName();
+	string	getFirstname();
+	void	setAge(const int age);
+	void	setName(const string name);
+	void	setFirstname(const string name);
 	
 	vector<Person> Friends();
 
