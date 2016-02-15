@@ -31,3 +31,14 @@ make or make re // to build project
 make fclean  	// to remove the *.o and others binaries
 make clean	// to remove *.o
 ```
+
+#### Tests
+
+You can run locally. Note that this project is under Travis CI which runs the tests after every push.
+
+
+```
+// To run the test
+cd tests
+make -f MakefileTest && ./TestBin
+```
