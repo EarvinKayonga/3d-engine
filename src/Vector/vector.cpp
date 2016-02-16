@@ -1,10 +1,11 @@
-#include	<cstdio>
-#include	<iostream>
-#include	<string>
-#include	<sstream>
-#include	<stdexcept>
-#include	"vector.h"
-#include	"../Patch/patch.h"
+#include <cstdio>
+#include <stdlib.h>
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <stdexcept>
+#include "vector.h"
+#include "../Patch/patch.h"
 
 using namespace std;
 using namespace patch;
@@ -30,7 +31,24 @@ string	Vector::toString(){
   return (Vect);
 }
 
-double	Vector::x(){
+double Vector::get(const int i){
+  if (i > -1 && i < 5)
+    return (coords[i]);
+  else
+    return (double) NULL;
+}
+
+int   Vector::set(const int index, const double value)
+{
+  if (index > 4 || index < 0)
+    return 0;
+  else{
+    coords[index] = value;
+    return 1;
+  }  
+}
+
+double Vector::x(){
   return (coords[0]);
 }
 

@@ -23,6 +23,8 @@ class Vector{
 	
 	void     printf();
 	string   toString();
+	double   get(const int);
+	int      set(const int, const double);
 	void     set_x(double);
 	void     set_y(double);
 	void     set_z(double);
