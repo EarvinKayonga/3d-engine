@@ -8,14 +8,25 @@ compiler:
 os:
   - linux
   - osx
-  
+
 # whitelist
 branches:
   only:
     - master
 
+addons:
+  apt:
+   packages:
+     - tree
+
+before install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update          ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install tree; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then apt-get update && apt-get install tree; fi
+
 before_script:
   - echo "Dir:" && ls -al;
+  - tree
 
 script:
   - make && (cd tests &&  make -f MakefileTest && ./TestBin)
