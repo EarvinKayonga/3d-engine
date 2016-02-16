@@ -32,7 +32,7 @@ string	Vector::toString(){
 }
 
 double Vector::get(const int i){
-  if (i > -1 && i < 5)
+  if (i > -1 && i < 4)
     return (coords[i]);
   else
     return (double) NULL;
@@ -40,7 +40,7 @@ double Vector::get(const int i){
 
 int   Vector::set(const int index, const double value)
 {
-  if (index > 4 || index < 0)
+  if (index > 3 || index < 0)
     return 0;
   else{
     coords[index] = value;
