@@ -1,11 +1,11 @@
-#include <cstdio>
-#include <stdlib.h>
-#include <iostream>
-#include <string>
-#include <sstream>
-#include <stdexcept>
-#include "vector.h"
-#include "../Patch/patch.h"
+#include	<cstdio>
+#include	<stdlib.h>
+#include	<iostream>
+#include	<string>
+#include	<sstream>
+#include	<stdexcept>
+#include	"vector.h"
+#include	"../Patch/patch.h"
 
 using namespace std;
 using namespace patch;
@@ -17,7 +17,7 @@ void	Vector::printf(){
 };
 
 string	Vector::toString(){
-  string Vect = "<Class:Vector ";
+  string	Vect = "<Class:Vector ";
   int i = 0;
 
   for ( i = 0; i < 4; i++){
@@ -81,7 +81,7 @@ void	Vector::set_d(double d){
 }
 
 Vector	Vector::operator+(const Vector& right){
-  Vector res;
+  Vector	res;
   
   
   return (res);
