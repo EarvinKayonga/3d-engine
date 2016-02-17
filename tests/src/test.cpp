@@ -70,6 +70,11 @@ int		main() {
     else
       assert (zero.get(j) == 1.0);
   }
+
+  assert (zero.x() == 1.0);
+  assert (zero.y() == 1.0);
+  assert (zero.z() == 1.0);
+  assert (zero.d() == 1.0);
   
   cout << ": " << green << "success" << reset << endl;
   return	(0);
