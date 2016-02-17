@@ -1,5 +1,6 @@
 #include	<cassert>
 #include	<iostream>
+// Rand
 #include	"../../src/Vector/vector.h"
 #include	"../../src/Person/person.h"
 
@@ -77,5 +78,8 @@ int		main() {
   assert (zero.d() == 1.0);
   
   cout << ": " << green << "success" << reset << endl;
+
+  cout << "Testing Vector Class with random values";
+  
   return	(0);
 }
