@@ -7,7 +7,7 @@
 using namespace std;
 
 /*
- *  Color for logs in console
+ *  Color values for logs in console
  */
 
 const string	red("\033[0;31m");
