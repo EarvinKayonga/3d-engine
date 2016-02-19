@@ -60,9 +60,9 @@ int		main() {
   cout << "Testing Vector::set(..)";
   for (int j = 0; j < 6; j++) {
     if (j > -1 && j < 4)
-      assert (zero.set(j, 1.0) == 1); // 
+      assert (zero.set(j, 1.0) == 1); 
     else
-      assert (zero.set(j, 1.0) == 0); // wrong index
+      assert (zero.set(j, 1.0) == 0); 
   }
 
   for (int j = 0; j < 4; j++){
