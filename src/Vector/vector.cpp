@@ -17,17 +17,16 @@ void	Vector::printf(){
 };
 
 string	Vector::toString(){
-  string	Vect = "<Class:Vector ";
+  string	Vect = "<Class:Vector (";
   int i = 0;
 
   for ( i = 0; i < 4; i++){
-    std::ostringstream stm, si;
+    std::ostringstream stm;
     stm << coords[i] ;
-    si << si;
-    Vect += si.str()  + stm.str() + " ";
+    Vect +=  stm.str() + " ";
   }
   
-  Vect += ">";
+  Vect += ")>";
   return (Vect);
 }
 
