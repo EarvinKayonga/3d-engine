@@ -41,3 +41,4 @@ before_script:
 
 script:
   - make && (cd tests &&  make -f MakefileTest && ./TestBin)
+  - make run
