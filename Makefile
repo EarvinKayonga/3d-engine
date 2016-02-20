@@ -22,4 +22,7 @@ fclean:			clean
 
 re:		fclean all
 
-.PHONY: all clean
+run:			re all
+		$(NAME)
+
+.PHONY: all clean run
