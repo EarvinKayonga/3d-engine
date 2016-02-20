@@ -20,7 +20,7 @@ int		main()
   Earvin.say("hi");
   Earvin.hasFriends(Chris);
   Earvin.showFriends();
-  unite.printf();
+  cout << unite.toString() << endl;
   
   return (0);
 }
