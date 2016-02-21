@@ -40,4 +40,4 @@ before_script:
   - tree
 
 script:
-  - make && (cd tests &&  make -f MakefileTest && ./TestBin)
+  - (make && ./Bin)  && (cd tests &&  make -f MakefileTest && ./TestBin)
