@@ -25,12 +25,12 @@ string	Vector::toString(){
     stm << coords[i] ;
     Vect +=  stm.str() + " ";
   }
-  
+
   Vect += ")>";
   return (Vect);
 }
 
-double Vector::get(const int i){
+double Vector::get(const int i) const{
   if (i > -1 && i < 4)
     return (coords[i]);
   else
@@ -44,7 +44,7 @@ int   Vector::set(const int index, const double value)
   else{
     coords[index] = value;
     return 1;
-  }  
+  }
 }
 
 double Vector::x(){
@@ -81,7 +81,15 @@ void	Vector::set_d(double d){
 
 Vector	Vector::operator+(const Vector& right){
   Vector	res;
-  
-  
-  return (res);
+  int           i;
+
+  for (i = 0; i < 4; i++){
+     double      value = get(i) + right.get(i);
+    cout << "value : " <<  value << endl;
+    if (res.set(i, value) != 1){ // Something went bad
+      return (NULL);
+    }
+    
+  }
+  return        (res);
 }
