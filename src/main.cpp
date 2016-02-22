@@ -16,11 +16,11 @@ int		main()
   Vector	zero(0, 0, 0, 0);
   Vector	unite(1, 1, 1, 0);
 
-  zero.printf(); 
   Earvin.say("hi");
   Earvin.hasFriends(Chris);
   Earvin.showFriends();
-  cout << unite.toString() << endl;
-  
+  cout << "Zero: " << zero.toString() << endl << endl;
+  cout << "Unite:" << unite.toString() << endl << endl;
+  cout << "Sum:  " << (zero + unite).toString() << endl << endl;
   return (0);
 }
