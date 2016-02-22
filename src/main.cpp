@@ -13,14 +13,19 @@ int		main()
 {
   Person	Earvin("Earvin", "Kayonga", 23);
   Person	Chris("Christelle", "Fremy", 22);
+
   Vector	zero(0, 0, 0, 0);
   Vector	unite(1, 1, 1, 0);
 
   Earvin.say("hi");
   Earvin.hasFriends(Chris);
   Earvin.showFriends();
+
   cout << "Zero: " << zero.toString() << endl << endl;
   cout << "Unite:" << unite.toString() << endl << endl;
   cout << "Sum:  " << (zero + unite).toString() << endl << endl;
+  cout << "Mutiple Sum: " << (zero + unite + unite).toString() << endl << endl;
+
+  
   return (0);
 }
