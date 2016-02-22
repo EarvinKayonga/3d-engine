@@ -37,8 +37,8 @@ before_install:
 
 before_script:
   - echo "Data:" && ls -al;
-  - tree
+  - tree -CFL 3
 
 script:
   - (make && ./Bin)  && (cd tests &&  make -f MakefileTest && ./TestBin)
-  - tree
+  - tree -CFL 3
