@@ -36,6 +36,7 @@ class Vector{
 	double   d();
 
 	Vector  operator+(const Vector&);
+	Vector  operator*(const double&);
 
 	Vector(){
 	  for (int i = 0; i < 4; i++){

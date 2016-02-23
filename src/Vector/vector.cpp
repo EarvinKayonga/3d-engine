@@ -85,10 +85,21 @@ Vector	Vector::operator+(const Vector& right){
 
   for (i = 0; i < 4; i++){
     double      value = get(i) + right.get(i);
-    if (res.set(i, value) != 1){ // Something went bad
-      return (NULL);
-    }
-    
+    if (res.set(i, value) != 1) // Something went bad
+      return (Vector)(NULL);
   }
+  return        (res);
+}
+
+Vector  Vector::operator*(const double& right){
+  Vector        res;
+  int           i;
+
+  for (i = 0; i < 4; i++){
+    double      value = get(i)*right;
+    if (res.set(i, value) != 1)
+      return   (Vector)(NULL);
+  }
+  
   return        (res);
 }
