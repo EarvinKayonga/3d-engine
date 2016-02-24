@@ -11,14 +11,17 @@ OBJ	=	$(SRC:%.cpp=%.o)
 
 $(NAME):	$(OBJ)
 		$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+		@echo "Build successful!"
 
 all:		$(NAME)
 
 clean:
 		$(RM) $(OBJ)
+		@echo "Removing *.o!"
 
 fclean:			clean
 		$(RM) $(NAME)
+		@echo "Removing all binaries!"
 
 re:		fclean all
 
