@@ -80,6 +80,30 @@ int		main() {
   cout << ": " << green << "success" << reset << endl;
 
   cout << "Testing Vector Class with random values";
+  cout << ": " << green << "success" << reset << endl;
+  
+  
+  cout << "Testing Operator +  for Vector Class";
+
+  Vector   unite(1.0, 1.0, 1.0, 1.0);
+  assert ((zero + unite).x() == 2.0);
+  assert ((zero + unite).y() == 2.0);
+  assert ((zero + unite).z() == 2.0);
+  assert ((zero + unite).d() == 2.0);
+  
+  
+  cout << ": " << green << "success" << reset << endl;
+
+  cout << "Testing Operator * for Vector Class";
+
+  assert (((zero + unite)*1.5).x() == 3.0);
+  assert (((zero + unite)*1.5).y() == 3.0);
+  assert (((zero + unite)*1.5).z() == 3.0);
+  assert (((zero + unite)*1.5).d() == 3.0);
+
+
+  cout << ": " << green << "success" << reset << endl;
+
   
   return	(0);
 }
