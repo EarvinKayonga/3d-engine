@@ -1,6 +1,8 @@
 #include	<cassert>
 #include	<iostream>
-// Rand
+#include        <cstdlib>
+#include        <ctime>
+#include        <math.h>
 #include	"../../src/Vector/vector.h"
 #include	"../../src/Person/person.h"
 
@@ -17,8 +19,8 @@ const string	cyan("\033[0;36m");
 const string	magenta("\033[0;35m");
 const string	reset("\033[0m");
 
-
 int		main() {
+  srand (time(0));
   Person	Chris("Christelle", "Fremy", 23);
 
   cout << "Testing an Instance of Person at its initialization";
@@ -80,6 +82,17 @@ int		main() {
   cout << ": " << green << "success" << reset << endl;
 
   cout << "Testing Vector Class with random values";
+
+  double val = -1000.0 + fmod(rand(),1000.0);
+  Vector r(val, val, val, val);
+
+  assert (r.x() == val);
+  assert (r.y() == val);
+  assert (r.z() == val);
+  assert (r.d() == val);
+  
+  
+  
   cout << ": " << green << "success" << reset << endl;
   
   
