@@ -123,10 +123,11 @@ int		main() {
   assert ((unite * unite) == 1.0);
   assert ((unite.length() * unite.length()) == 1.0);
  
-  Vector onlyThree(3.0, 3.0, 3.0, 1.0); 
-  cout << z*onlyThree << endl;
+  Vector onlyThree(3.0, 3.0, 3.0, 1.0);
+  
   assert ((z*onlyThree) == 3.0);
   assert (onlyThree.length() == sqrt(27));
+  
   cout << ": " << green << "success" << reset << endl;
   
   return	(0);
