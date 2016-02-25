@@ -41,6 +41,11 @@ class Vector{
 	double  operator*(const Vector&); //Dot Product 
 	Vector  operator-(const Vector&);
 	void    operator=(const Vector&);
+	bool    operator==(const Vector& right);
+	bool    operator!=(const Vector& right);
+	/*Vector& operator+=(const Vector& right);
+	Vector& operator-=(const Vector& right);
+	Vector& operator*=(const double& right);*/
 
 	Vector(){
 	  for (int i = 0; i < 4; i++){

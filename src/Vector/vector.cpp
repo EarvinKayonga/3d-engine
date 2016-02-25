@@ -152,3 +152,41 @@ void     Vector::operator=(const Vector& right){
     coords[nb] = right.get(nb);
   }
 }
+
+bool    Vector::operator==(const Vector& right){
+  int           line;
+  bool          res;
+
+  res = true;
+  for (line = 0; line < 4; line++){
+    if (get(line)  != right.get(line))
+      return   (false);
+  }
+  
+  return        (res);
+}
+
+bool    Vector::operator!=(const Vector& right){
+  int           line;
+  bool          res;
+
+  res = false;
+  for (line = 0; line < 4; line++){
+    if (get(line)  != right.get(line))
+      return   (true);
+  }
+
+  return        (res);
+}
+
+/*Vector& Vector::operator+=(const Vector& right){
+
+}
+
+Vector& Vector::operator*=(const double& right){
+
+}
+
+Vector& Vector::operator-=(const Vector& right){
+
+}*/
