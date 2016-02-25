@@ -26,7 +26,7 @@ string	Vector::toString(){
     stm << coords[i] ;
     Vect +=  stm.str() + " ";
   }
-
+  
   Vect += ")>";
   return (Vect);
 }
@@ -84,13 +84,10 @@ double  Vector::length(){ // u*u = ||u||^2
   double        res;
   int           line;
 
-  for (line = 0; line < 4; line++){
-    if (!get(line))
-      return    (double)(NULL);
-
-    res += get(line) * get(line);
+  res = 0;
+  for (line = 0; line < 3; line++){
+    res += coords[line] * coords[line];
   }
-
   return        (sqrt(res));
 }
 
@@ -98,11 +95,14 @@ Vector	Vector::operator+(const Vector& right){
   Vector	res;
   int           i;
 
-  for (i = 0; i < 4; i++){
+  for (i = 0; i < 3; i++){
     double      value = get(i) + right.get(i);
     if (res.set(i, value) != 1) // Something went bad
       return   (NULL);
   }
+  if (!res.set(3, this->coords[3]))
+    return (NULL);
+  
   return        (res);
 }
 
@@ -110,11 +110,14 @@ Vector  Vector::operator*(const double& right){
   Vector        res;
   int           i;
 
-  for (i = 0; i < 4; i++){
+  for (i = 0; i < 3; i++){
     double      value = get(i)*right;
-    if (res.set(i, value) != 1)
+    if (!res.set(i, value))
       return   (NULL);
   }
+  
+  if (!res.set(3, this->coords[3]))
+    return (NULL);
   
   return        (res);
 }
@@ -123,11 +126,15 @@ Vector  Vector::operator-(const Vector& right){
   Vector        res;
   int           i;
 
-  for (i = 0; i < 4; i++){
+  for (i = 0; i < 3; i++){
     double      value = get(i) - right.get(i);
     if (res.set(i, value) != 1) // Something went bad
       return   (NULL);
   }
+
+  if (!res.set(3, this->coords[3]))
+    return (NULL);
+  
   return        (res);
 }
 
@@ -135,13 +142,9 @@ double  Vector::operator*(const Vector& right){
   double        res;
   int           line;
 
-  for (line = 0; line < 4; line++){
-    if (!right.get(line))
-      return    (double)(NULL);
-    if (!get(line))
-      return    (double)(NULL);
-
-    res += right.get(line) * get(line);
+  res = 0;
+  for (line = 0; line < 3; line++){
+    res += right.coords[line] * coords[line];
   }
   
   return        (res);
@@ -158,7 +161,7 @@ bool    Vector::operator==(const Vector& right){
   bool          res;
 
   res = true;
-  for (line = 0; line < 4; line++){
+  for (line = 0; line < 3; line++){
     if (get(line)  != right.get(line))
       return   (false);
   }
@@ -171,7 +174,7 @@ bool    Vector::operator!=(const Vector& right){
   bool          res;
 
   res = false;
-  for (line = 0; line < 4; line++){
+  for (line = 0; line < 3; line++){
     if (get(line)  != right.get(line))
       return   (true);
   }
@@ -183,22 +186,22 @@ Vector& Vector::operator+=(const Vector& right){
   this->coords[0] += right.coords[0];
   this->coords[1] += right.coords[1];
   this->coords[2] += right.coords[2];
-  this->coords[3] += right.coords[3];
-  return *this;
+  
+  return (*this);
 }
 
 Vector& Vector::operator*=(const double& right){
   this->coords[0] *= right;
   this->coords[1] *= right;
   this->coords[2] *= right;
-  this->coords[3] *= right;
-  return *this;
+  
+  return (*this);
 }
 
 Vector& Vector::operator-=(const Vector& right){
   this->coords[0] -= right.coords[0];
   this->coords[1] -= right.coords[1];
   this->coords[2] -= right.coords[2];
-  this->coords[3] -= right.coords[3];
-  return *this;
+    
+  return (*this);
 }

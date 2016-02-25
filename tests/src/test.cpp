@@ -96,25 +96,38 @@ int		main() {
   
   cout << "Testing Operator +  for Vector Class";
 
-  Vector   unite(1.0, 1.0, 1.0, 1.0);
+  Vector   unite(1.0, 0.0, 0.0, 1.0);
   assert ((zero + unite).x() == 2.0);
-  assert ((zero + unite).y() == 2.0);
-  assert ((zero + unite).z() == 2.0);
-  assert ((zero + unite).d() == 2.0);
+  assert ((zero + unite).y() == 1.0);
+  assert ((zero + unite).z() == 1.0);
+  assert ((zero + unite).d() == 1.0);
   
   cout << ": " << green << "success" << reset << endl;
 
   cout << "Testing Operator * <Double> for Vector Class";
 
   assert (((zero + unite)*1.5).x() == 3.0);
-  assert (((zero + unite)*1.5).y() == 3.0);
-  assert (((zero + unite)*1.5).z() == 3.0);
-  assert (((zero + unite)*1.5).d() == 3.0);
+  assert (((zero + unite)*1.5).y() == 1.5);
+  assert (((zero + unite)*1.5).z() == 1.5);
+  assert (((zero + unite)*1.5).d() == 1.0);
 
   cout << ": " << green << "success" << reset << endl;
 
+  cout << "Testing Operator * <Vector> |Dot Product| for Vector Class ";
 
+  Vector z(0,0,1,1);
   
+  assert ((z * unite) == 0);
+  assert ((z.length() * unite.length()) == 1.0);
+
+  assert ((unite * unite) == 1.0);
+  assert ((unite.length() * unite.length()) == 1.0);
+ 
+  Vector onlyThree(3.0, 3.0, 3.0, 1.0); 
+  cout << z*onlyThree << endl;
+  assert ((z*onlyThree) == 3.0);
+  assert (onlyThree.length() == sqrt(27));
+  cout << ": " << green << "success" << reset << endl;
   
   return	(0);
 }
