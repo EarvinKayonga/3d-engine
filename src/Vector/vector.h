@@ -38,7 +38,7 @@ class Vector{
 	Vector  operator+(const Vector&);
 	Vector  operator*(const double&);
 	//Vector  operator*(const Vector&); //Dot Product 
-	//Vector  operator-(const double&);  
+	Vector  operator-(const Vector&);  
 
 	Vector(){
 	  for (int i = 0; i < 4; i++){
