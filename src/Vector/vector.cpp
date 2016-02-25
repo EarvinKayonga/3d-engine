@@ -179,14 +179,26 @@ bool    Vector::operator!=(const Vector& right){
   return        (res);
 }
 
-/*Vector& Vector::operator+=(const Vector& right){
-
+Vector& Vector::operator+=(const Vector& right){
+  this->coords[0] += right.coords[0];
+  this->coords[1] += right.coords[1];
+  this->coords[2] += right.coords[2];
+  this->coords[3] += right.coords[3];
+  return *this;
 }
 
 Vector& Vector::operator*=(const double& right){
-
+  this->coords[0] *= right;
+  this->coords[1] *= right;
+  this->coords[2] *= right;
+  this->coords[3] *= right;
+  return *this;
 }
 
 Vector& Vector::operator-=(const Vector& right){
-
-}*/
+  this->coords[0] -= right.coords[0];
+  this->coords[1] -= right.coords[1];
+  this->coords[2] -= right.coords[2];
+  this->coords[3] -= right.coords[3];
+  return *this;
+}
