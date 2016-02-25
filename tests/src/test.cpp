@@ -83,15 +83,13 @@ int		main() {
 
   cout << "Testing Vector Class with random values";
 
-  double val = -1000.0 + fmod(rand(),1000.0);
+  double val = -1000.0 + fmod(rand(),1000.0); // fmod => %
   Vector r(val, val, val, val);
 
   assert (r.x() == val);
   assert (r.y() == val);
   assert (r.z() == val);
   assert (r.d() == val);
-  
-  
   
   cout << ": " << green << "success" << reset << endl;
   
@@ -104,19 +102,19 @@ int		main() {
   assert ((zero + unite).z() == 2.0);
   assert ((zero + unite).d() == 2.0);
   
-  
   cout << ": " << green << "success" << reset << endl;
 
-  cout << "Testing Operator * for Vector Class";
+  cout << "Testing Operator * <Double> for Vector Class";
 
   assert (((zero + unite)*1.5).x() == 3.0);
   assert (((zero + unite)*1.5).y() == 3.0);
   assert (((zero + unite)*1.5).z() == 3.0);
   assert (((zero + unite)*1.5).d() == 3.0);
 
-
   cout << ": " << green << "success" << reset << endl;
 
+
+  
   
   return	(0);
 }
