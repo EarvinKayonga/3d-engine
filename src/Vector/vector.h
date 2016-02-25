@@ -34,6 +34,7 @@ class Vector{
 	double   y();
 	double   z();
 	double   d();
+	double   length();
 
 	Vector  operator+(const Vector&);
 	Vector  operator*(const double&);

@@ -4,6 +4,7 @@
 #include	<string>
 #include	<sstream>
 #include	<stdexcept>
+#include        <math.h>
 #include	"vector.h"
 #include	"../Patch/patch.h"
 
@@ -77,6 +78,20 @@ void	Vector::set_z(double z){
 
 void	Vector::set_d(double d){
   coords[3] = d;
+}
+
+double  Vector::length(){ // u*u = ||u||^2
+  double        res;
+  int           line;
+
+  for (line = 0; line < 4; line++){
+    if (!get(line))
+      return    (double)(NULL);
+
+    res += get(line) * get(line);
+  }
+
+  return        (sqrt(res));
 }
 
 Vector	Vector::operator+(const Vector& right){
