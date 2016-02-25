@@ -37,7 +37,7 @@ class Vector{
 
 	Vector  operator+(const Vector&);
 	Vector  operator*(const double&);
-	//Vector  operator*(const Vector&); //Dot Product 
+	double  operator*(const Vector&); //Dot Product 
 	Vector  operator-(const Vector&);  
 
 	Vector(){

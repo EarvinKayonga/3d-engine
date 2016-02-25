@@ -1,5 +1,5 @@
 CC 	=	g++
-CFLAGS 	=	-W -Wall -Werror -Wextra -g
+CFLAGS 	=	-W -Wall -Werror -Wextra -Weffc++ -pedantic -g
 NAME	=	Bin
 RM	=	rm -f
 SRC 	=	src/main.cpp		\

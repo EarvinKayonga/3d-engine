@@ -115,3 +115,20 @@ Vector  Vector::operator-(const Vector& right){
   }
   return        (res);
 }
+
+double  Vector::operator*(const Vector& right){
+  double        res;
+  int           line;
+
+  for (line = 0; line < 4; line++){
+    if (!right.get(line))
+      return    (double)(NULL);
+    if (!get(line))
+      return    (double)(NULL);
+
+    res += right.get(line) * get(line);
+  }
+  
+  return        (res);
+}
+
