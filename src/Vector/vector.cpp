@@ -132,3 +132,8 @@ double  Vector::operator*(const Vector& right){
   return        (res);
 }
 
+void     Vector::operator=(const Vector& right){
+  for (int nb = 0;  nb < 4; nb++){
+    coords[nb] = right.get(nb);
+  }
+}
