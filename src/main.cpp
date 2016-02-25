@@ -25,7 +25,8 @@ int		main()
   cout << "Unite:" << unite.toString() << endl << endl;
   cout << "Sum:  " << (zero + unite).toString() << endl << endl;
   cout << "Mutiple Sum: " << (zero + unite + unite).toString() << endl << endl;
-
+  cout << "Mutiplication: " << ((zero + unite + unite)*2.0).toString() << endl << endl;
+  
   
   return (0);
 }
