@@ -130,18 +130,6 @@ int		main() {
   
   cout << ": " << green << "success" << reset << endl;
 
-  /*
-
- 
-  void    operator=(const Vector&);
-  bool    operator==(const Vector& right);
-  bool    operator!=(const Vector& right);
-  Vector& operator+=(const Vector& right);
-  Vector& operator-=(const Vector& right);
-  Vector& operator*=(const double& right);
-
-  */
-
   cout << "Testing Operator - <Vector> for Vector Class";
 
   assert (((z - unite)).x() == -1.0);
@@ -166,7 +154,12 @@ int		main() {
 
   cout << ": " << green << "success" << reset << endl;
   
-
+  /*                                                                            
+  void    operator=(const Vector&);                                             
+  Vector& operator+=(const Vector& right);                                      
+  Vector& operator-=(const Vector& right);                                      
+  Vector& operator*=(const double& right);                                      
+  */
   
   return	(0);
 }
