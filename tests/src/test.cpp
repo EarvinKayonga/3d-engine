@@ -162,7 +162,7 @@ int		main() {
   cout << "Testing Operator != <Vector> for Vector Class";
 
   assert ((z != unite));
-  assert ((z != ZReplica));
+  assert (!(z != ZReplica));
 
   cout << ": " << green << "success" << reset << endl;
   
