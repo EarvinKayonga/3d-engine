@@ -129,6 +129,44 @@ int		main() {
   assert (onlyThree.length() == sqrt(27));
   
   cout << ": " << green << "success" << reset << endl;
+
+  /*
+
+ 
+  void    operator=(const Vector&);
+  bool    operator==(const Vector& right);
+  bool    operator!=(const Vector& right);
+  Vector& operator+=(const Vector& right);
+  Vector& operator-=(const Vector& right);
+  Vector& operator*=(const double& right);
+
+  */
+
+  cout << "Testing Operator - <Vector> for Vector Class";
+
+  assert (((z - unite)).x() == -1.0);
+  assert (((z - unite)).y() == 0.0);
+  assert (((z - unite)).z() == 1.0);
+  assert (((z - unite)).d() == 1.0);
+
+  cout << ": " << green << "success" << reset << endl;
+
+  cout << "Testing Operator == <Vector> for Vector Class";
+
+  assert (!(z == unite));
+  Vector ZReplica(0,0,1,1);
+  assert ((z == ZReplica));
+  
+  cout << ": " << green << "success" << reset << endl;
+
+  cout << "Testing Operator != <Vector> for Vector Class";
+
+  assert ((z != unite));
+  assert ((z != ZReplica));
+
+  cout << ": " << green << "success" << reset << endl;
+  
+
   
   return	(0);
 }
