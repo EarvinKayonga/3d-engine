@@ -165,9 +165,19 @@ int		main() {
   assert (zero.d() == 1.0);
 
   cout << ": " << green << "success" << reset << endl;
+
+  cout << "Testing Operator =  for Vector Class";
+
+  zero = z;
+
+  assert (zero.x() == 0.0);
+  assert (zero.y() == 0.0);
+  assert (zero.z() == 1.0);
+  assert (zero.d() == 1.0);
+
+  cout << ": " << green << "success" << reset << endl;
   
-  /*                                                                          
-  void    operator=(const Vector&);                                          
+  /*                                       
   Vector& operator+=(const Vector& right);                                     
   Vector& operator-=(const Vector& right);                                     
   */
