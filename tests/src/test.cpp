@@ -153,12 +153,23 @@ int		main() {
   assert (!(z != ZReplica));
 
   cout << ": " << green << "success" << reset << endl;
+
+
+  cout << "Testing Operator *= <Double> for Vector Class";
+
+  zero *= 0;
   
-  /*                                                                            
-  void    operator=(const Vector&);                                             
-  Vector& operator+=(const Vector& right);                                      
-  Vector& operator-=(const Vector& right);                                      
-  Vector& operator*=(const double& right);                                      
+  assert (zero.x() == 0.0);
+  assert (zero.y() == 0.0);
+  assert (zero.z() == 0.0);
+  assert (zero.d() == 1.0);
+
+  cout << ": " << green << "success" << reset << endl;
+  
+  /*                                                                          
+  void    operator=(const Vector&);                                          
+  Vector& operator+=(const Vector& right);                                     
+  Vector& operator-=(const Vector& right);                                     
   */
   
   return	(0);
