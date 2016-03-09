@@ -3,6 +3,7 @@ CFLAGS 	=	-W -Wall -Werror -Wextra -g
 NAME	=	TestBin
 RM	=	rm -f
 SRC 	=	src/Vector.cpp			\
+		src/Matrix.cpp			\
 		src/main.cpp			\
 		../src/Vector/vector.cpp	\
 		../src/Person/person.cpp
