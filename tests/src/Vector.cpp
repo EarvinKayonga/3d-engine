@@ -19,7 +19,11 @@ const string	cyan("\033[0;36m");
 const string	magenta("\033[0;35m");
 const string	reset("\033[0m");
 
-int		main() {
+/*
+ *   Entrypoint for tests
+ */
+
+int		testVecteur() {
   srand (time(0));
   Person	Chris("Christelle", "Fremy", 23);
 

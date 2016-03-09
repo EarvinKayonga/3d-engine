@@ -79,4 +79,6 @@ class Vector{
 	};
 };
 
+int    testVector();
+
 #endif
