@@ -1,27 +1,27 @@
-#ifndef MATRIX_H
-#define MATRIX_H
+#ifndef		MATRIX_H
+#define		MATRIX_H
 
-#include ../Vector/vector.h
+#include	../Vector/vector.h
 
-class Matrix{
+class		Matrix{
  private:
-  Vector[4] tab;
+		Vector[4] Vectors;
 
  public:
-  Vector[4]       getTab();
-  int            setTab(Vector[4] tab);
-  int            addToTab(Vector toto);
+  Vector	get(int i);
+  Vector[4]     getVectors();
+  int		setVectorAt(int, Vector);
+  int           setVectors(Vector[4] tab);
+  int           addToVectors(Vector toto);
 
   /*
    * Initializers
    */
   Matrix(Vector[4] mtab){
-    tab = mtab;
+    Vectors = mtab;
   }
-  
 
   Matrix();
-  
 }
 
-#endif MATRIX_H
+#endif		MATRIX_H

@@ -1,7 +1,7 @@
 #ifndef		VECTOR_H
 #define		VECTOR_H
 
-#include <string>
+#include	<string>
 using namespace std;
 
 class Vector{
@@ -38,7 +38,7 @@ class Vector{
 	/*
 	 * Getters and setters
 	 */
-	double   get(const int) const;
+	double	 get(const int) const;
 	int      set(const int, const double);
 	void     set_x(double);
 	void     set_y(double);
