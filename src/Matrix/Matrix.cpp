@@ -13,8 +13,12 @@ Vector	Matrix::get(int i){
 }
 
 int           setVectorAt(int i, Vector vect){
-  //TODO
-  return 1;
+  if (i > 3 || i < 0){
+    return (1);
+  }
+  
+  this->vectors[i] = vect;
+  return (0);
 }
 
 Vector[4]	getTab(){
