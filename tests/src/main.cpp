@@ -3,8 +3,8 @@
 #include        <cstdlib>
 #include        <ctime>
 #include        <math.h>
-#include	"../../src/Vector/vector.h"
-#include	"../../src/Person/person.h"
+#include	"../../src/Vector/vector.hpp"
+#include	"../../src/Person/person.hpp"
 
 using namespace std;
 

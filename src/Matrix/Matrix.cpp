@@ -1,5 +1,5 @@
 #include	"../Vector/vector.h"
-#include	"Matrix.h"
+#include	"Matrix.hpp"
 
 Vector	Matrix::get(int i){
   if(i > -1 && i < 4)

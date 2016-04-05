@@ -3,8 +3,8 @@
 #include	<stdio.h>
 #include	<stdlib.h>
 #include	<time.h>
-#include	"Person/person.h"
-#include	"Vector/vector.h"
+#include	"Person/person.hpp"
+#include	"Vector/vector.hpp"
 
 
 using namespace std;

@@ -5,7 +5,7 @@
 #include	<sstream>
 #include	<stdexcept>
 #include        <math.h>
-#include	"vector.h"
+#include	"vector.hpp"
 #include	"../Patch/patch.h"
 
 using namespace std;

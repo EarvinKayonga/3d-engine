@@ -2,7 +2,7 @@
 #include	<vector>
 #include	<iostream>
 #include	<cstdio>
-#include	"person.h"
+#include	"person.hpp"
 #include	"../Patch/patch.h"
 
 using namespace std;
