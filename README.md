@@ -6,6 +6,11 @@ A little experimentation with C++
 [![ready](https://badge.waffle.io/EarvinKayonga/3d-engine.svg?label=ready&title=Ready)]()
 
 [![Build Status](https://travis-ci.org/EarvinKayonga/3d-engine.svg?branch=master)](https://travis-ci.org/EarvinKayonga/3d-engine)
+[![Code Climate](https://codeclimate.com/github/EarvinKayonga/3d-engine/badges/gpa.svg)](https://codeclimate.com/github/EarvinKayonga/3d-engine)
+
+[![Test Coverage](https://codeclimate.com/github/EarvinKayonga/3d-engine/badges/coverage.svg)](https://codeclimate.com/github/EarvinKayonga/3d-engine/coverage)
+
+[![Issue Count](https://codeclimate.com/github/EarvinKayonga/3d-engine/badges/issue_count.svg)](https://codeclimate.com/github/EarvinKayonga/3d-engine)
 
 ### Setup
 
