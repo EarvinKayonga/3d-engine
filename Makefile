@@ -17,11 +17,11 @@ all:		$(NAME)
 
 clean:
 		$(RM) $(OBJ)
-		@echo "Removing *.o!"
+		@echo "Removed *.o!"
 
 fclean:			clean
 		$(RM) $(NAME)
-		@echo "Removing all binaries!"
+		@echo "Removed all binaries!"
 
 re:		fclean all
 
