@@ -12,11 +12,11 @@ Vector	Matrix::get(int i){
   }
 }
 
-int           setVectorAt(int i, Vector vect){
+int   Matrix::setVectorAt(int i, Vector vect){
   if (i > 3 || i < 0){
     return (1);
   }
-  
+
   this->vectors[i] = vect;
   return (0);
 }
@@ -25,13 +25,17 @@ Vector[4]	getTab(){
   return (this->vectors);
 }
 
-int		setTab(Vector[4] tab){
+int		Matrix::setTab(Vector[4] tab){
+  int i = 0;
+
+  while(i  < 4){
+    this->vectors[i] = tab[i];
+    i++;
+  }
+  return (0);
+}
+
+int	  Matrix::addToTab(Vector toto){
   //TODO
   return 1;
 }
-
-int		addToTab(Vector toto){
-  //TODO
-  return 1;
-}
-

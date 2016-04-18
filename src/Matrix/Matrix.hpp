@@ -6,7 +6,7 @@
 class		Matrix{
  private:
 		Vector[4] Vectors;
-		//functions that needs to be implented
+		//functions that needs to be implemented
  public:
   Vector	get(int i);
   Vector[4]     getVectors();
