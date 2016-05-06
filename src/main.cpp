@@ -43,7 +43,7 @@ int		main()
   cout << "y.x: "<< y*x << endl;
   cout << "z.x: "<< z*x << endl;
   cout << "y.z: "<< y*z << endl;
-  cout << "t.x:  "<< t*x << endl;
+  cout << "t.x: "<< t*x << endl;
   
   return (0);
 }
