@@ -35,8 +35,14 @@ make
 make or make re // to build project
 make fclean  	// to remove the *.o and others binaries
 make clean	// to remove *.o
+
 ```
 
+or if cmake is installed on your machine
+
+```
+cmake .
+```
 #### Tests
 
 You can run locally. Note that this project is under Travis CI which runs the tests after every push.
